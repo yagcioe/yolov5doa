@@ -1,0 +1,57 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# DIUx xView 2018 Challenge https://challenge.xviewdataset.org by U.S. National Geospatial-Intelligence Agency (NGA)
+# --------  DOWNLOAD DATA MANUALLY and jar xf val_images.zip to 'datasets/xView' before running train command!  --------
+# Example usage: python train.py --data xView.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── xView  ← downloads here (20.7 GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /workspace/featureData # dataset root dir
+train: train/images # train images (relative to 'path') 90% of 847 train images
+val: val/images # train images (relative to 'path') 10% of 847 train images
+test: test/images # train images (relative to 'path') 90% of 847 train images
+
+# Classes
+nc: 37 # number of classes
+# left l middle m rigth r arrow < > and complete center ~
+names: [
+        "0rr>", 
+        "1rr",
+        "2rr",
+        "3r>",
+        "4r>",
+        "5r",
+        "6r",
+        "7r",
+        "8rm>",
+        "9rm>",
+        "10rm>",
+        "11rm~",
+        "12rm",
+        "13rm",
+        "14rm",
+        "15m>",
+        "16m>",
+        "17m>",
+        "18m~",
+        "19m<",
+        "20m<",
+        "21m<",
+        "22lm",
+        "23lm",
+        "24lm",
+        "25lm~",
+        "26lm<",
+        "27lm<",
+        "28lm<",
+        "29l",
+        "30l",
+        "31l",
+        "32l<",
+        "33l<",
+        "34ll",
+        "35ll",
+        "36ll<",
+    ]
